@@ -1,0 +1,38 @@
+/**
+ *  Copyright Steven Allen (2015)
+ *
+ *  This file is part of gazetta-bootstrap.
+ *
+ *  gazetta-bootstrap is free software: you can redistribute it and/or modify
+ *  it under the terms of the GNU General Public License (version 2) as
+ *  published by the Free Software Foundation.
+ *
+ *  gazetta-bin is distributed in the hope that it will be useful,
+ *  but WITHOUT ANY WARRANTY; without even the implied warranty of
+ *  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ *  GNU General Public License for more details.
+ *
+ *  You should have received a copy of the GNU General Public License
+ *  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#page-pagination {
+  text-align: center;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+#page-pagination > div {
+  display: inline-block;
+}
+#page-pagination > div > * {
+  background: #fefefe;
+  padding: 4px 12px;
+  line-height: 20px;
+  text-decoration: none;
+  border: 1px solid #eee;
+  border-left-width: 0;
+}
+#page-pagination > div > *:first-child {
+  border-left-width: 1px;
+}
