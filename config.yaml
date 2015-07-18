@@ -1,9 +1,10 @@
 title: Bitmap
+base: http://example.com/
 
 author:
   name: Ben Bitdiddle
   email: bitdiddle@example.com
 
 nav:
-  - Blog : /blog
-  - Projects : /projects
+  - Blog : blog
+  - Projects : projects
