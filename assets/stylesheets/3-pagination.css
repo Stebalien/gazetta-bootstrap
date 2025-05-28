@@ -13,24 +13,21 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with gazetta-bootstrap.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 #page-pagination {
   text-align: center;
-  margin: 0;
-  text-align: center;
+  margin-bottom: 20px;
   width: 100%;
 }
-#page-pagination > div {
-  display: inline-block;
-}
+#page-pagination > div { display: inline-block }
 #page-pagination > div > * {
-  background: #fefefe;
-  padding: 4px 12px;
-  line-height: 20px;
+  background: var(--pagination-bg-color);
+  padding: 0.2em 1em;
+  line-height: 1;
   text-decoration: none;
-  border: 1px solid #eee;
+  border: 1px solid var(--content-border-color);
   border-left-width: 0;
 }
 #page-pagination > div > *:first-child {

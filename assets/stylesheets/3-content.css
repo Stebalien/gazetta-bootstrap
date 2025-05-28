@@ -3,7 +3,7 @@
  *
  *  This file is part of gazetta-bootstrap.
  *
- *  gazetta-bootstrap is free software: you can redistribute it and/or modify
+ *  gazetta-bootstrap is free software:  you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License (version 2) as
  *  published by the Free Software Foundation.
  *
@@ -13,88 +13,136 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with gazetta-bootstrap.  If not,  see <http: //www.gnu.org/licenses/>.
  */
-
 .content th {
   text-align: left;
   text-decoration: underline;
+  border: 1px solid var(--content-border-color);
+  padding: 2px 4px;
 }
-.content td + td,
-.content th + th,
-.content th + td,
-.content td + th { padding-left: 10px }
+
+.content td {
+  border: 1px solid var(--content-border-color);
+  padding: 2px 4px;
+}
+
+.content thead {
+  background-color: #f5f5f5;
+  font-weight: 700;
+}
+
 .content img {
   display: block;
-  margin: 20px auto;
-  max-width: 100%;
-  margin-bottom: 10px;
-  box-shadow: 0px 0px 2px 2px rgba(50, 50, 50, 0.1);
+  margin: 20px auto 10px;
+  max-width: calc(100% - 10px);
+  border: 1px solid var(--content-border-color);
 }
+
 .content ul > li {
   list-style: disc outside;
   margin-left: 2em;
 }
+
 .content ol > li {
   list-style: numeric outside;
   margin-left: 2em;
 }
-.content ul, .content ol {
-  margin-bottom: 10px;
-}
+
+.content ul, .content ol { margin-bottom: 1ex }
 .content em { font-style: italic }
-.content strong { font-weight: bold }
-.content hr { border-color: #ddd }
-.content code { padding: 2px }
-.content pre,
-.content code {
-  color: #111;
-  font-family: monospace;
-  font-size: 10px;
+.content strong { font-weight: 700 }
+
+.content hr {
+  border: 0;
+  border-top: 1px solid var(--content-border-color);
 }
-.content pre {
-  background-color: #fafafa;
+
+.content code { padding: 2px }
+
+.content pre, .content code {
+  color: var(--code-color);
+  font-family: "JetBrains Mono";
+  font-size: 0.9em;
+}
+
+.content pre, .content blockquote {
+  background-color: var(--block-bg-color);
   max-height: 30em;
   overflow: auto;
-  padding: 5px;
-  border: 1px solid #eee;
+  padding: 0.5em;
+  margin-top: 2ex;
+  margin-bottom: 2ex;
+  border: 1px solid var(--content-border-color);
 }
-.content blockquote { border-color: #eee }
-.content blockquote p { font-size: 14px }
-.content p { margin-bottom: 10px; }
 
-.content h1, .content h2, .content h3 {
-  font-weight: 300;
+.content blockquote {
+  border-left-width: 4px;
 }
+
+.content pre {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.content p {
+  text-align: justify;
+}
+
+.content p + p {
+  margin-top: 2ex;
+}
+
+.content h1 { font-weight: 300 }
 
 .content h1, .content h2, .content h3, .content h4, .content h5 {
-  border-bottom: 1px solid #eee;
-  margin-bottom: 10px;
+  border-bottom: 2px solid var(--content-border-color);
+  margin-bottom: 1ex;
+  margin-top: 1ex;
   width: 100%;
 }
 
 .content h1 {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 1.8rem;
+  line-height: 1.6;
 }
 
 .content h2 {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
 
 .content h3 {
-  font-size: 24px;
-  line-height: 36px;
+  font-size: 1.4rem;
+  line-height: 1.6;
 }
 
 .content h4 {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .content h5 {
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.1rem;
+  line-height: 1.6;
 }
 
+.content sup {
+  vertical-align: super;
+  font-size-adjust: .4;
+}
+
+.content .footnote-reference > a::after { content: "]" }
+.content .footnote-reference > a::before { content: "[" }
+.content .footnote {
+  font-size: 0.8em;
+  padding: 1ex;
+  padding-left: 1ex;
+  border-left: 4px solid var(--content-border-color);
+  color: var(--footnote-color);
+  line-height: 1.0;
+}
+
+.content .footnote > * {
+  display: inline;
+}

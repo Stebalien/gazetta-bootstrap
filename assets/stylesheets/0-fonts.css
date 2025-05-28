@@ -1,15 +1,42 @@
-/* Not copyrightable */
-
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Libertinus Sans';
   font-style: normal;
-  font-weight: 400;
-  src: local("Open Sans"), local("OpenSans"), url(/static/fonts/opensans.woff) format("woff");
+  font-weight: normal;
+  src: local("Libertinus Sans"), url(/static/fonts/LibertinusSans-Regular.woff2) format("woff2");
 }
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Libertinus Sans';
   font-style: normal;
-  font-weight: 300;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url(/static/fonts/opensans-light.woff) format("woff");
+  font-weight: bold;
+  src: local("Libertinus Sans"), url(/static/fonts/LibertinusSans-Bold.woff2) format("woff2");
 }
-
+@font-face {
+  font-family: 'Libertinus Sans';
+  font-style: italic;
+  font-weight: normal;
+  src: local("Libertinus Sans"), url(/static/fonts/LibertinusSans-Italic.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: normal;
+  src: local("JetBrains Mono"), url(/static/fonts/JetBrainsMono-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: bold;
+  src: local("JetBrains Mono"), url(/static/fonts/JetBrainsMono-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: bold;
+  src: local("JetBrains Mono"), url(/static/fonts/JetBrainsMono-BoldItalic.woff2) format("woff2");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: normal;
+  src: local("JetBrains Mono"), url(/static/fonts/JetBrainsMono-Italic.woff2) format("woff2");
+}

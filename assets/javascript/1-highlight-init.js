@@ -1,2 +1,2 @@
 hljs.configure({ languages: [] });
-hljs.initHighlightingOnLoad();
+hljs.highlightAll();

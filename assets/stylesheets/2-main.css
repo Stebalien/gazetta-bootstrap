@@ -3,7 +3,7 @@
  *
  *  This file is part of gazetta-bootstrap.
  *
- *  gazetta-bootstrap is free software: you can redistribute it and/or modify
+ *  gazetta-bootstrap is free software:  you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License (version 2) as
  *  published by the Free Software Foundation.
  *
@@ -13,195 +13,204 @@
  *  GNU General Public License for more details.
  *
  *  You should have received a copy of the GNU General Public License
- *  along with Foobar.  If not, see <http://www.gnu.org/licenses/>.
+ *  along with gazetta-bootstrap.  If not, see <http: //www.gnu.org/licenses/>.
  */
-
 #site-header {
   left: 0;
-  width: 198px;
+  width: 216px;
   position: absolute;
-  padding-right: 20px;
   transition: margin-bottom .5s;
 }
-#site-header a {
-  color: #000;
-  text-decoration: none;
-}
 
-#site-header h1 {
-  font-weight: 400;
-  padding: 20px 10px;
-  width: 100%;
-}
-#site-header h1,
-#page-header h1 {
-  font-size: 40px;
-  line-height: 40px;
-  background-color: #eee;
-  border-bottom: 1px solid #ddd;
-}
-
-#page-header h1 {
+#site-header .header {
+  font-weight: 300;
   padding: 20px;
-  margin: -20px -20px 0px;
+  border-bottom: 1px solid var(--inner-border-color);
+}
+
+#site-header .header, #page-header .header {
+  color: var(--text-color);
+  text-decoration: none;
+  display: block;
+  font-size: 2.7rem;
+  line-height: 1.0;
+  background-color: var(--header-bg-color);;
 }
 
 #page-header {
+  padding: 0;
   font-weight: 300;
-  margin-bottom: 20px;
+  border-bottom: 1px solid var(--inner-border-color);
+  background-color: var(--header-bg-color-alt);;
 }
 
-#page-header time {
-  font-size: 16px;
-  background-color: #eee;
-  border-bottom: 1px solid #ddd;
-  border-left: 1px solid #ddd;
+#page-header .header {
+  padding: 20px;
+  border-color: var(--outer-border-color);
+}
+
+
+.content {
+  padding: 20px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+}
+
+.title .header {
+  flex-grow: 1;
+}
+
+.title .header:nth-last-child(2) {
+  border-right: 1px solid;
+}
+
+.title time {
+  font-size: 1.2em;
+  padding: 1em 2em;
+  line-height: 1.0;
+  color: var(--faded-color);
+}
+
+.title time .date-year {
   display: block;
-  margin-right: -20px;
-  padding: 5px 10px;
-  text-align: right;
-  float: right;
-  margin-top: -1px;
-  border-bottom-left-radius: 5px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
 }
 
-#site-header,
-#site-content {
-  border: 1px solid #aaaaaa;
-  box-shadow: 0px 0px 2px 2px rgba(50, 50, 50, 0.1);
-  background-color: #ffffff;
+.title time .date-month::after {
+  content: ".";
 }
-#site-content,
-#site-footer {
-  width: 600px;
+
+#site-header, #site-content {
+  background-color: var(--content-bg-color);
+  border-style: solid;
+  border-color: var(--outer-border-color);
+  border-width: 1px 3px 3px 1px;
+}
+
+#site-content, #site-footer {
+  width: 700px;
   position: relative;
   min-width: 310px;
-  padding: 20px;
-  left: 242px;
+  left: 240px;
 }
 
 #site-footer {
+  margin: 10px;
   text-align: center;
   line-height: 1;
-  font-size: 12px;
+  color: var(--footer-color);
 }
 
-html,
-body {
-  line-height: 20px;
-  background-color: #ddd;
-  color: #000;
-  font-size: 12px;
-  font-family: "Open Sans", sans-serif;
+html {
+  /* Otherwise, responsive crap... */
+  overflow: 0;
+  overflow-y: scroll;
 }
+
+html, body {
+  line-height: 1.5;
+  background-color: var(--distant-bg-color);
+  color: var(--text-color);
+  font-family: "Libertinus Sans", "Open Sans", sans-serif;
+}
+
 body {
-  position: absolute;
+  position: relative;
+  width: 940px;
   display: block;
-  margin-right: 260px;
-  margin-left: 200px;
+  margin-right: auto;
+  margin-left: auto;
   margin-top: 120px;
   transition: margin .5s;
 }
 
 /* Hight adjustments */
-
-@media (max-height: 525px) { 
-  body {
-    /* Stick bottom, flow up */
-    height: 405px;
-    margin-top: auto;
-    bottom: 0px;
-  }
-}
-
-@media (max-height: 425px) { 
+@media (max-height: 600px) {
   body {
     /* Stick to the top */
     margin-top: 20px;
-    top: 0px;
-  }
-}
-@media (max-width: 1102px) { 
-  body {
-    /* Stick right, flow left */
-    right: 0px;
-    margin-left: auto;
   }
 }
 
 /* Width adjustments */
-
-@media (max-width: 924px) { 
+@media (max-width: 1040px) {
   body {
-    /* Stick left */
-    left: 0px;
-    margin-left: 20px;
+    width: auto;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 290px;
   }
-  #site-content,
-  #site-footer {
+  #site-content, #site-footer {
     width: auto;
   }
 }
 
-@media (max-width: 700px) { 
+@media (max-width: 750px) {
   /* reflow to vertical */
-
   #site-header {
     position: relative;
     margin-bottom: 20px;
     width: auto;
     min-width: 330px;
   }
+
   body {
-    top: 0px;
     margin: 20px;
   }
-  #site-content,
-  #site-footer {
-    left: 0px;
+
+  #site-content, #site-footer {
+    left: 0;
   }
 }
 
 @media (max-width: 400px) {
   /* Drop the margins, add some padding */
-
   body {
     margin: 2px;
     width: auto;
   }
+
   #site-header {
     margin-bottom: 4px;
   }
 }
 
-#site-nav ul { white-space: nowrap }
-#site-nav ul > li {
-  line-height: 26px;
-  font-size: 20px;
-  width: 100%;
-}
-#site-nav ul > li > a {
-  padding: 10px;
-  color: #444;
-  width: 100%;
-  display: inline-block;
+#site-nav {
+  white-space: nowrap;
+  padding: 10px 20px;
 }
 
-#site-header:not(:hover) .active a:after,
-#site-header:hover a:hover:after {
+#site-nav a {
+  line-height: 1.2;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--text-color);
+  width: 100%;
+  display: block;
+}
+
+#site-nav a + a {
+  padding-top: 10px;
+}
+
+#site-header:not(:hover) a.active:after, #site-header:hover a:hover:after {
   content: "«";
-  color: #aaa;
-  right: 10px;
+  color: var(--marker-color);
+  right: 5px;
   position: absolute;
 }
 
 a {
   text-decoration: none;
-  color: #0088cc;
+  color: var(--link-color);
 }
 
 a:hover {
-  color: #005580;
+  color: var(--link-hover-color);
 }
 
 a:focus, a:hover {
@@ -210,4 +219,9 @@ a:focus, a:hover {
 
 a:focus {
   outline: none;
+}
+
+#site-nav a, .header {
+    font-variant: small-caps;
+    text-transform: lowercase;
 }
