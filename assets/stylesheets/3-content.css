@@ -80,6 +80,49 @@
   border-left-width: 4px;
 }
 
+.content blockquote.note::before {
+    content: "note";
+    color: var(--callout-note-color);
+    text-decoration: dotted underline;
+}
+
+.content blockquote.tip::before {
+    content: "tip";
+    color: var(--callout-tip-color);
+}
+
+.content blockquote.important::before {
+    content: "important";
+    color: var(--callout-important-color);
+    text-decoration: underline;
+}
+
+.content blockquote.warning::before {
+    content: "WARNING";
+    color: var(--callout-warning-color);
+    text-decoration: double underline;
+}
+
+.content blockquote.caution::before {
+    content: "CAUTION";
+    color: var(--callout-caution-color);
+    text-decoration: wavy underline;
+}
+
+.content blockquote.note::before,
+.content blockquote.tip::before,
+.content blockquote.important::before,
+.content blockquote.warning::before,
+.content blockquote.caution::before {
+    font-weight: bold;
+    font-variant: small-caps;
+    background: var(--block-header-color);
+    display: block;
+    margin: -0.5em -0.5em 0.5em -0.5em;
+    padding: 0.5em;
+    line-height: 1;
+}
+
 .content pre {
   margin-left: 1em;
   margin-right: 1em;

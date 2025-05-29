@@ -105,12 +105,6 @@
   color: var(--footer-color);
 }
 
-html {
-  /* Otherwise, responsive crap... */
-  overflow: 0;
-  overflow-y: scroll;
-}
-
 html, body {
   line-height: 1.5;
   background-color: var(--distant-bg-color);

@@ -8,7 +8,7 @@
         --inner-border-color: #cdb0b0;
         --content-border-color: #cdb0b0;
         --block-bg-color: #fff8f7;
-        --block-header-color: #fff8f7;
+        --block-header-color: #fcebe9;
         --block-header-color-alt: #fffaf1;
         --header-bg-color: #ffdbd2;
         --header-bg-color-alt: #ffeecf;
@@ -25,6 +25,12 @@
         --item-bg-color: #fefefe;
         --item-border-color: #cdb0b0;
         --pagination-bg-color: #fff8f7;
+
+        --callout-note-color: #714a4a;
+        --callout-tip-color: #714a4a;
+        --callout-important-color: #714a4a;
+        --callout-warning-color: #9a0000;
+        --callout-caution-color: #9a0000;
     }
 }
 
@@ -56,5 +62,11 @@
         --item-bg-color: #2e2e2e;
         --item-border-color: #393939;
         --pagination-bg-color: #0a0a0a;
+
+        --callout-note-color: #acbdce;
+        --callout-tip-color: #acbdce;
+        --callout-important-color: #acbdce;
+        --callout-warning-color: #99caff;
+        --callout-caution-color: #99caff;
     }
 }
