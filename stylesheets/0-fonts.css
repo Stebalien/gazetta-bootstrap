@@ -3,40 +3,47 @@
   font-style: normal;
   font-weight: normal;
   src: local("Libertinus Sans"), url(/static/fonts/LibertinusSans-Regular.woff2) format("woff2");
+  font-display: fallback;
 }
 @font-face {
   font-family: 'Libertinus Sans';
   font-style: normal;
   font-weight: bold;
   src: local("Libertinus Sans"), url(/static/fonts/LibertinusSans-Bold.woff2) format("woff2");
+  font-display: fallback;
 }
 @font-face {
   font-family: 'Libertinus Sans';
   font-style: italic;
   font-weight: normal;
   src: local("Libertinus Sans"), url(/static/fonts/LibertinusSans-Italic.woff2) format("woff2");
+  font-display: fallback;
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: normal;
   src: local("JetBrains Mono"), url(/static/fonts/JetBrainsMono-Regular.woff2) format("woff2");
+  font-display: fallback;
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
   font-weight: bold;
   src: local("JetBrains Mono"), url(/static/fonts/JetBrainsMono-Bold.woff2) format("woff2");
+  font-display: fallback;
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: bold;
   src: local("JetBrains Mono"), url(/static/fonts/JetBrainsMono-BoldItalic.woff2) format("woff2");
+  font-display: fallback;
 }
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: italic;
   font-weight: normal;
   src: local("JetBrains Mono"), url(/static/fonts/JetBrainsMono-Italic.woff2) format("woff2");
+  font-display: fallback;
 }
